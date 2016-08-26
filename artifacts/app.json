@@ -1,0 +1,40 @@
+[
+  {
+    "name"        : "bank1",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "203.0.1.1",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "bank1",
+      "WS_SERVER"     : "http://203.0.1.12:3000",
+      "WS_SECRET"     : "g3heim",
+    }
+  },
+  {
+    "name"        : "bank2",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "203.0.1.2",
+      "RPC_PORT"    : "8546",
+      "INSTANCE_NAME"   : "bank2",
+      "WS_SERVER"     : "http://203.0.1.12:3000",
+      "WS_SECRET"     : "g3heim",
+    }
+  }
+]
